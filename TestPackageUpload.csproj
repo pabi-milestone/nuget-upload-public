@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+<!-- This is a test project for uploading a NuGet package -->
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
