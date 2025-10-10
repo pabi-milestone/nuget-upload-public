@@ -1,0 +1,17 @@
+name: 'Test run of reusable workflow'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test_run:
+    strategy:
+      matrix:
+        test: [
+         Test1,
+         Test2, 
+         Test3
+        ]
+    uses: ./.github/workflows/reusable-workflow.yaml
+    with:
+      my_input: ${{ matrix.test }}

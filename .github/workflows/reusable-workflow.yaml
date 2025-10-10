@@ -1,0 +1,23 @@
+name: Reusable Workflow
+
+on:
+  workflow_call:
+    inputs:
+      my_input:
+        description: 'A string input parameter'
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      my_input:
+        description: 'A string input parameter'
+        required: true
+        type: string
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        environment: production-nuget
+        steps:
+            - name: Print input parameter
+              run: echo ${{ inputs.my_input }}

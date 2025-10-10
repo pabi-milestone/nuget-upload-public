@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageId>nuget-package-upload-test</PackageId>
+    <Title>Test of upload NuGet package from a GitHub workflow</Title>
+  </PropertyGroup>
+
+</Project>
